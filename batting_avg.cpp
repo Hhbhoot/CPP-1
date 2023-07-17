@@ -44,5 +44,5 @@ int main(){
     batsman a;
     a.readdata();
     a.calcavg();
-     a.dispalydata();
+    a.dispalydata();
 }
