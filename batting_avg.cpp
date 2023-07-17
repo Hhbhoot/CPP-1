@@ -43,6 +43,6 @@ int main(){
 
     batsman a;
     a.readdata();
-    int batavg= a.calcavg();
+    a.calcavg();
      a.dispalydata();
 }
