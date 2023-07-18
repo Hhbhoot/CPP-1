@@ -1,45 +1,47 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class batsman{
+class batsman
+{
 
     int bcode;
     char bname[20];
-    int innings,notout,runs;
+    int innings, notout, runs;
 
-    public:
+public:
+    int readdata()
+    {
 
-    int readdata(){
+        cout << "Enter bcode ;";
+        cin >> bcode;
 
-        cout<<"Enter bcode ;";
-        cin>>bcode;
+        cout << "Enter name :";
+        cin >> bname;
 
-        cout<<"Enter name :";
-        cin>>bname;
+        cout << "Enter innings :";
+        cin >> innings;
 
-        cout<<"Enter innings :";
-        cin>>innings;
+        cout << "Enter No of times batsman remain notout :";
+        cin >> notout;
 
-        cout<<"Enter No of times batsman remain notout :";
-        cin>>notout;
-
-        cout<<"Enter total scored runs : ";
-        cin>>runs;
-
+        cout << "Enter total scored runs : ";
+        cin >> runs;
     }
-    int calcavg(){
-        int avg=runs/(innings-notout);
+    int calcavg()
+    {
+        int avg = runs / (innings - notout);
 
         return avg;
     }
-    int dispalydata(){
-        cout<<"Bcode\tBname\tinnings\tnotout\truns\tbatavg"<<"\n";
-        cout<<bcode<<"\t"<<bname<<"\t"<<innings<<"\t"<<notout<<"\t"<<runs<<"\t"<<calcavg();
+    int dispalydata()
+    {
+        cout << "Bcode\tBname\tinnings\tnotout\truns\tbatavg"
+             << "\n";
+        cout << bcode << "\t" << bname << "\t" << innings << "\t" << notout << "\t" << runs << "\t" << calcavg();
     }
-
-
 };
 
-int main(){
+int main()
+{
 
     batsman a;
     a.readdata();
