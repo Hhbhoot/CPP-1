@@ -12,14 +12,12 @@ public:
         cout << "Enter testcode :";
         cin >> testcode;
 
-        cout << "Enter DEscription :";
+        cout << "Enter Description :";
         cin >> description;
 
         cout << "Enter no of candidate :";
-        cin >> nocandidate;
-
-        // cout<<"Enter center Required :";
-        // cin>>cenReq;
+        cin >> nocandidate; 
+      
     }
 
     int calcntr()
