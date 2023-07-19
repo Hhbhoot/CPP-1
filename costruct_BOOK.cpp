@@ -1,42 +1,40 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class book{
+class book
+{
 
     int bookno;
-    char bookname[20];\
+    char bookname[20];
     float price;
-    int copies,totalcost;
+    int copies, totalcost;
 
-    public:
+public:
+    book()
+    {
 
-    book(){
+        cout << "Enter book no :";
+        cin >> bookno;
 
-        cout<<"Enter book no :";
-        cin>>bookno;
+        cout << "Enter book name :";
+        cin >> bookname;
 
-        cout<<"Enter book name :";
-        cin>>bookname;
+        cout << "enter price :";
+        cin >> price;
 
-        cout<<"enter price :";
-        cin>>price;
+        cout << "enter number of copies want to buy :";
+        cin >> copies;
 
-        cout<<"enter number of copies want to buy :";
-        cin>>copies;
-
-      totalcost=price*copies;
-
+        totalcost = price * copies;
     }
 
-    int display(){
-        cout<<"bookno\tbook name\tprice\tcopies\ttotalcost"<<endl;
-        cout<<bookno<<"\t"<<bookname<<"\t\t"<<price<<"\t"<<copies<<"\t"<<totalcost;
+    int display()
+    {
+        cout << "bookno\tbook name\tprice\tcopies\ttotalcost" << endl;
+        cout << bookno << "\t" << bookname << "\t\t" << price << "\t" << copies << "\t" << totalcost;
     }
-
-
-
 };
-int main(){
+int main()
+{
     book b;
     b.display();
-
 }

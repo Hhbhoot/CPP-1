@@ -1,45 +1,43 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class batsman{
+class batsman
+{
 
     int bcode;
     char bname[20];
-    int innings ,notout,runs,batavg;
+    int innings, notout, runs, batavg;
 
-    public:
+public:
+    batsman()
+    {
+        cout << "enter bcode :";
+        cin >> bcode;
 
-    batsman(){
-        cout<<"enter bcode :";
-        cin>>bcode;
+        cout << "Enter name :";
+        cin >> bname;
 
-        cout<<"Enter name :";
-        cin>>bname;
+        cout << "Enter innings played : ";
+        cin >> innings;
 
-        cout<<"Enter innings played : ";
-        cin>>innings;
+        cout << "Enter no of times remain notout :";
+        cin >> notout;
 
-        cout<<"Enter no of times remain notout :";
-        cin>>notout;
+        cout << "Enter runs scored :";
+        cin >> runs;
 
-        cout<<"Enter runs scored :";
-        cin>>runs;
- 
-       batavg=runs/(innings-notout);
-
-
+        batavg = runs / (innings - notout);
     }
 
-    int display(){
+    int display()
+    {
 
-        cout<<"Bcode\tname\tinnings\tnotout\truns\taverage"<<endl;
-        cout<<bcode<<"\t"<<bname<<"\t"<<innings<<"\t"<<notout<<"\t"<<runs<<"\t"<<batavg;
-
+        cout << "Bcode\tname\tinnings\tnotout\truns\taverage" << endl;
+        cout << bcode << "\t" << bname << "\t" << innings << "\t" << notout << "\t" << runs << "\t" << batavg;
     }
-
 };
-int main(){
+int main()
+{
 
     batsman b;
     b.display();
-
 }
