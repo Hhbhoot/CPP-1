@@ -18,7 +18,7 @@ public:
     }
     volume(double l)
     {
-        cout << "Volume of cube :" << l * l * l << endl;
+        cout << "Volume of cube :" << l * l * l << endl;                                                            
     }
     ~volume()
     {
