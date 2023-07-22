@@ -3,7 +3,7 @@ using namespace std;
 class book
 {
     int l, w, h;
-
+ 
 public:
     void setdata(int a, int b, int c)
     {

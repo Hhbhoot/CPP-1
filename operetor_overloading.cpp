@@ -48,7 +48,7 @@ int main()
     c = a + b;
     cout << "Volume of box 3 :" << c.getdata() << endl;
 
-    d = a - b;
+    d = c- b;
 
     cout << "Volume of box 4 :" << d.getdata() << endl;
 }
