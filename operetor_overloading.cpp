@@ -26,16 +26,29 @@ public:
         t.h = h + n.h;
         return t;
     }
+    box operator-(box &e)
+    {
+        box y;
+        y.l = l - e.l;
+        y.w = w - e.w;
+        y.h = h - e.h;
+
+        return y;
+    }
 };
 int main()
 {
 
-    box a, b, c;
-    a.setdata(2, 2, 2);
+    box a, b, c, d;
+    a.setdata(7, 7, 7);
     cout << "Volume of box 1 :" << a.getdata() << endl;
     b.setdata(5, 5, 5);
     cout << "Volume of box 2 :" << b.getdata() << endl;
 
     c = a + b;
     cout << "Volume of box 3 :" << c.getdata() << endl;
+
+    d = a - b;
+
+    cout << "Volume of box 4 :" << d.getdata() << endl;
 }
