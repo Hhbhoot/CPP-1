@@ -22,18 +22,18 @@ public:
         x.img = ++img;
         return x;
     }
-    number operator++(int)
+    number operator--(int)
     {
         number y;
-        y.real = real++;
-        y.img = img++;
+        y.real = real--;
+        y.img = img--;
         return y;
     }
 };
 int main()
 {
 
-    number t, q, r;
+    number t, q, r, s;
     t.setdata(5, 1);
     t.getdata();
 
@@ -41,7 +41,7 @@ int main()
 
     q.getdata();
 
-    q++;
+    q--;
     r = q;
 
     r.getdata();
